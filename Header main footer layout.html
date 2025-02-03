@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 50px 1fr 50px;
+            height: 100vh;
+            gap: 10px;
+            grid-template-areas: "header header"
+                "sidebar main"
+                "footer footer";
+        }
+
+        .header {
+            background-color: aqua;
+            grid-area: header;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            background-color: cadetblue;
+            grid-area: sidebar;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            background-color: blue;
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: yellow;
+            grid-area: footer;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
